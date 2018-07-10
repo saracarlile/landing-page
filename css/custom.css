@@ -1,0 +1,289 @@
+.top-bar {
+    display: flex;
+    height: 54px;
+    background-color: rgba(36, 34, 34, 1);
+    color: white;
+    justify-content: flex-end;
+}
+
+.top-bar div {
+    width: 80px;
+    border-right: 1px solid rgba(232, 232, 232, .08);
+}
+
+.fa {
+    color: white;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 12px 20px 20px 20px;
+}
+
+.fa-phone:hover, .fa-search:hover, .fa-shopping-cart:hover {
+    cursor: pointer;
+    color: #02a7b9;
+    animation-duration: 500ms;
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+    100% {
+        font-size: 30px;
+    }
+}
+
+@keyframes lines {
+    100% {
+        width: 24px;
+    }
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 105px;
+    padding: 0px 100px 0px 100px;
+    overflow: hidden;
+    z-index: 10;
+    background-color: white;
+}
+
+#header-img {
+    margin-top: -40px;
+}
+
+#header div {
+    float: left;
+    width: 50%;
+}
+
+#nav-bar {
+    float: right;
+    width: 50%;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+#nav-bar ul li {
+    padding: 0px 35px 0px 0px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 130px;
+}
+
+#nav-bar ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    line-height: 32px;
+}
+
+.nav-text {
+    position: relative;
+}
+
+.active-nav:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 5px;
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    transform: translateX(-50%);
+    animation-duration: 500ms;
+    animation-name: lines;
+    animation-fill-mode: forwards;
+}
+
+.inner-slide {
+    width: 100%;
+}
+
+.inner-left {
+    float: left;
+    width: 50%;
+}
+
+.inner-right {
+    float: right;
+    width: 50%;
+}
+
+#carousel {
+    margin-top: 250px;
+    overflow: hidden;
+}
+
+#products {
+    max-width: 1500px;
+    padding: 100px 15px 0px 15px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+#value {
+    max-width: 1500px;
+    padding: 100px 15px 0px 15px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#products h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    color: black;
+    line-height: 38px;
+    margin: 100px 0px 100px 0px;
+    position: relative;
+    text-align: center;
+}
+
+#products h4:after {
+    content: ' ';
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    width: 35px;
+    border: 2px solid #c1c1c1;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    transform: translateX(-50%);
+}
+
+
+.flexbox-video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#value h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    color: black;
+    line-height: 38px;
+    margin: 100px 0px 100px 0px;
+    position: relative;
+}
+
+#value h4:after {
+    content: ' ';
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    width: 15%;
+    border: 2px solid #c1c1c1;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    transform: translateX(-50%);
+}
+
+.shop-images {
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.shop-images img {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+#contact {
+    margin-top: 100px;
+}
+
+#contact h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: black;
+    line-height: 38px;
+    margin: 150px 0px 20px 0px;
+    position: relative;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    background-color: #d0d0d0;
+    padding: 30px 20px;
+}
+
+/* https://www.quackit.com/css/flexbox/tutorial/align_form_elements_with_flexbox.cfm */
+
+.form-example {
+    padding: .5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-example > input {
+    flex: 1;
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 2px solid orange;
+  }
+
+.form-example > label {
+    padding: .5em 1em .5em 0;
+}
+
+#submit {
+    max-width: 270px;
+    padding: 6px 10px;
+    background: orange linear-gradient(orange,#ff8c00);
+    border: 1px solid orange;
+    color: #fff;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#submit:hover {
+    max-width: 270px;
+    padding: 6px 10px;
+    background:#ff8c00;
+    border: 1px solid orange;
+    color: #fff;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer {
+    display: block;
+    height: 1px;
+    margin-top: 100px;
+    width: 100%;
+}
