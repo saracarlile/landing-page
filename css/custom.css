@@ -237,6 +237,10 @@
     background-color: #d0d0d0;
     padding: 30px 20px;
 }
+#form:focus-within {
+    box-shadow: 0px 0.2em 2.5em #c4c4c4;
+}  
+
 
 /* https://www.quackit.com/css/flexbox/tutorial/align_form_elements_with_flexbox.cfm */
 
@@ -251,8 +255,9 @@
     padding-left: 5px;
 }
 
-input:focus {
-    border: 2px solid orange;
+input:focus, input:active {
+    outline: 2px solid orange;
+    box-shadow: 0px 0.2em 2.5em #c4c4c4;
   }
 
 .form-example > label {
@@ -279,6 +284,7 @@ input:focus {
     border-radius: 0;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #footer {
