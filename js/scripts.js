@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-
+//carousel JavaScript
     let slideIndex = 0;
 
     showSlides = () => {
@@ -38,6 +38,5 @@ window.addEventListener('load', () => {
 
 
     showSlides();
-
 
 });
