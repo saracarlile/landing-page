@@ -46,8 +46,8 @@
     height: 105px;
     padding: 0px 100px 0px 100px;
     overflow: hidden;
-    z-index: 10;
     background-color: white;
+    z-index: 2000;
 }
 
 #header-img {
@@ -308,7 +308,7 @@ input:focus, input:active {
 		cursor: pointer;
         margin-bottom: 10px;
         position: absolute;
-        right: 200px;
+        right: 20px;
         top: 20px;
     }
     
@@ -316,6 +316,79 @@ input:focus, input:active {
 		height: 0;
 		overflow: hidden;
 		background: #282828;
+        border-radius: 5px;
+        padding: 0px;
+        
+    }
+
+    #header {
+        overflow: visible;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        max-width: 180px;
+        position: relative;
+        top: 30px;
+        left: 180px;
+        align-items: flex-end;
+    }
+
+    nav ul {
+		height: 0;
+		background: #282828;
 		border-radius: 5px;
 	}
+
+	 nav ul.open {
+        height: 200px;
+        overflow: visible;
+        z-index: 10;
+        padding: 10px 5px 10px 30px;
+	}
+
+	nav ul li {
+		float: none;
+		text-align: right; 
+		width: auto;
+		display: block;
+		font-size: 18px;
+	}
+
+	#nav-bar ul li a {
+		color: white;
+		display: block;
+		padding: 5px 10px;
+    }
+    
+    #nav-bar ul li {
+        padding: 0px 0px 0px 0px;
+        position: relative;
+        justify-content: flex-end;
+        display: flex;
+        width: 130px;
+    }
+
+    /* hide carousel images in iPad view*/
+    .inner-right {
+        display: none;
+    }
+
+    .inner-left {
+        display: block;
+        width: 100%;
+    }
+
+    #form {
+        width: 80%;
+    }
+
+    .slideshow-container {
+        height: 429px;
+    }
+
+    #products {
+        padding: 10px 15px 0px 15px;
+    }
 }
