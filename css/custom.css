@@ -295,6 +295,15 @@ input:focus, input:active {
     width: 100%;
 }
 
+@media only screen and (max-width: 1025px) { 
+    .inner-left {
+        padding-left: 40px;
+    }
+    #form {
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     #header-img {
         display: none;
@@ -378,6 +387,7 @@ input:focus, input:active {
     .inner-left {
         display: block;
         width: 100%;
+        padding-left: 40px;
     }
 
     #form {
@@ -391,4 +401,8 @@ input:focus, input:active {
     #products {
         padding: 10px 15px 0px 15px;
     }
+}
+
+@media only screen and (max-width: 580px) { 
+    
 }
