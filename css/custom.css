@@ -309,6 +309,15 @@ input:focus, input:active {
         display: none;
     }
 
+    #nav-bar {
+        float: none;
+        position: absolute;
+        right: 20px;
+        top: -8px;
+        display: block;
+        width: 150px;
+    }
+
     .burger-nav {
 		background: url('../img/hamburger.png') no-repeat center;
 		display: block;
@@ -337,11 +346,10 @@ input:focus, input:active {
     #nav-bar ul {
         display: flex;
         flex-direction: column;
-        max-width: 180px;
+        align-items: flex-end;
         position: relative;
         top: 30px;
-        left: 180px;
-        align-items: flex-end;
+        right: 15px;
     }
 
     nav ul {
