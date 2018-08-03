@@ -36,6 +36,30 @@ $(function () {
         timer = window.setInterval("showSlides();", 4000);
     });
 
+    plusSlides = (n) => {
+        slideIndex += n;
+        let slides = document.getElementsByClassName("mySlides");
+        if (slideIndex > slides.length) { slideIndex = 1 };
+        if (slideIndex < 1) { slideIndex = slides.length};
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    const navLinks = document.getElementsByClassName('nav-text');
+
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", (event) => {
+            let current = document.getElementsByClassName("active-nav");
+            if (current.length >= 1) {
+                current[0].className = current[0].className.replace("active-nav", "");
+            }
+            event.target.className += " active-nav";
+        });
+    }
+
+
 
     //animation product images on scroll
     $('.fade-in-up').addClass('hidden').waypoint({
